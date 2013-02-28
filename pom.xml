@@ -1,49 +1,67 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.jenkins-ci.plugins</groupId>
-        <artifactId>plugin</artifactId>
-        <version>1.424</version>
-        <!-- which version of Jenkins is this plugin built against? -->
-    </parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.jenkins-ci.plugins</groupId>
+		<artifactId>plugin</artifactId>
+		<version>1.503</version>
+		<!-- which version of Jenkins is this plugin built against? -->
+	</parent>
+	<licenses>
+		<license>
+			<comments>Use this project wherever you like</comments>
+			<name>LGPL 2.1</name>
+			<url>http://www.gnu.org/licenses/lgpl-2.1.html</url>
+		</license>
+	</licenses>
 
-    <groupId>net.masterthought.jenkins</groupId>
-    <artifactId>cucumber-reports</artifactId>
-    <version>0.0.18</version>
-    <packaging>hpi</packaging>
+	<groupId>nz.co.chrystall</groupId>
+	<artifactId>cuke-jenkins-reports</artifactId>
+	<version>1.0.0</version>
+	<packaging>hpi</packaging>
 
-    <scm>
-      <connection>scm:git:git://github.com/masterthought/jenkins-cucumber-jvm-reports-plugin-java.git</connection>
-      <developerConnection>scm:git:git@github.com:masterthought/jenkins-cucumber-jvm-reports-plugin-java.git</developerConnection>
-      <url>http://github.com/masterthought/jenkins-cucumber-jvm-reports-plugin-java</url>
-    </scm>
+	<scm>
+		<connection>scm:git:https://github.com/Ported/jenkins-cucumber-jvm-reports-plugin-java.git</connection>
+		<developerConnection>scm:git:https://github.com/Ported/jenkins-cucumber-jvm-reports-plugin-java.git</developerConnection>
+		<url>https://github.com/Ported/jenkins-cucumber-jvm-reports-plugin-java</url>
+	</scm>
 
-    <!-- get every artifact through repo.jenkins-ci.org, which proxies all the artifacts that we need -->
-    <repositories>
-        <repository>
-            <id>repo.jenkins-ci.org</id>
-            <url>http://repo.jenkins-ci.org/public/</url>
-        </repository>
+	<!-- get every artifact through repo.jenkins-ci.org, which proxies all the 
+		artifacts that we need -->
+	<repositories>
+		<repository>
+			<id>repo.jenkins-ci.org</id>
+			<url>http://repo.jenkins-ci.org/public/</url>
+		</repository>
 
-        <repository>
-            <id>sonatype-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </repository>
-    </repositories>
+		<repository>
+			<id>sonatype-snapshots</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</repository>
+	</repositories>
 
-    <pluginRepositories>
-        <pluginRepository>
-            <id>repo.jenkins-ci.org</id>
-            <url>http://repo.jenkins-ci.org/public/</url>
-        </pluginRepository>
-    </pluginRepositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>repo.jenkins-ci.org</id>
+			<url>http://repo.jenkins-ci.org/public/</url>
+		</pluginRepository>
+	</pluginRepositories>
 
-    <dependencies>
-        <dependency>
-            <groupId>net.masterthought</groupId>
-            <artifactId>cucumber-reporting</artifactId>
-            <version>0.0.18-SNAPSHOT</version>
-        </dependency>
-
-    </dependencies>
+	<dependencies>
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>maven</groupId>
+			<artifactId>velocity</artifactId>
+			<version>1.5-20060721.044818</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.2.1</version>
+		</dependency>
+	</dependencies>
 </project>

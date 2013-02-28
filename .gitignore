@@ -4,3 +4,6 @@ target
 .log
 .idea
 velocity.log
+.classpath
+.project
+.settings
