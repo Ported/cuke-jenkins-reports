@@ -15,7 +15,7 @@ This plugin allows Jenkins to publish the results as pretty html reports hosted 
 
 1. [Get](https://jenkins-ci.org/) Jenkins.
 
-2. Install the plugin, the latest verion can be found at [here](https://s3.amazonaws.com/cuke-jenkins-reports/cuke-jenkins-reports.hpi)
+2. Install the plugin, the latest verion can be found at [here](https://s3.amazonaws.com/cuke-jenkins-reports/v1.0.1/cuke-jenkins-reports.hpi)
 
 3. Restart Jenkins.
 
