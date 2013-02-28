@@ -19,6 +19,8 @@
 	<artifactId>cuke-jenkins-reports</artifactId>
 	<version>1.0.0</version>
 	<packaging>hpi</packaging>
+	<name>Cuke Jenkins Reports</name>
+	<url>https://github.com/Ported/jenkins-cucumber-jvm-reports-plugin-java</url>
 
 	<scm>
 		<connection>scm:git:https://github.com/Ported/jenkins-cucumber-jvm-reports-plugin-java.git</connection>
